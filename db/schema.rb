@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130211131555) do
 
   create_table "disciplines", :force => true do |t|
     t.string   "name",       :null => false
+    t.integer  "course_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -34,9 +35,10 @@ ActiveRecord::Schema.define(:version => 20130211131555) do
   end
 
   create_table "teachers", :force => true do |t|
-    t.string   "name",       :null => false
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "name",          :null => false
+    t.integer  "discipline_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

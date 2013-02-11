@@ -1,0 +1,31 @@
+pt-BR:
+  question:
+    must_be_logged_to_answer_html: |
+      <a href="%{link}">Faça o login</a>
+      para responder.
+    relative_time: "perguntou %{time}"
+
+    answers:
+      zero: "nenhuma resposta"
+      one: "1 resposta"
+      other: "%{count} respostas"
+
+    answers_html:
+      one: "<strong>1</strong> resposta"
+      other: "<strong>%{count}</strong> respostas"
+
+    views:
+      zero: "nenhuma visita"
+      one: "1 visita"
+      other: "%{count} visitas"
+
+    views_html:
+      one: "<strong>1</strong> visita"
+      other: "<strong>%{count}</strong> visitas"
+
+    filters:
+      all: "Todas"
+      unanswered: "Não respondidas"
+
+    rss:
+      answered_by: "Respondido por %{name}"
