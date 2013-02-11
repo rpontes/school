@@ -1,0 +1,27 @@
+> software para gestão de escolas;
+
+    - controle:
+        - alunos;
+        - turmas;
+        - professores.
+
+
+> Preciso cadastrar os alunos, as turmas, os professores e as matérias que cada professor pode ministrar.
+
+    - cadastro:
+        - alunos;
+        - turmas;
+        - professores;
+        - matérias;
+
+> No cadastro de turmas, eu preciso informar quais as matérias que essa turma tem (ex: portugues e matemática) e qual o professor que está ministrando cada (joão em português e maria em matemática).
+
+> Preciso também de um relatório que me mostre todos os alunos agrupados por turma e quais os professores que ministram quais matérias em cada turma.
+
+> Esse relatório eu posso filtrar por turma e por professor.
+
+Não vou especificar nenhuma biblioteca mas preciso de tudo com testes unitários e aceitação
+
+Qualquer coisa adicional será considerado um diferencial.
+
+Preciso da aplicação rodando (heroku por exemplo) e do código.
