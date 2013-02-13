@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <b><%= t("discipline.name") %>:</b>
+  <%= @discipline.name %>
+</div>
+
+<div class="row">
+  <b><%= t("discipline.teacher") %>:</b>
+  <%= @discipline.teacher.name %>
+</div>
+
+<div class="row">
+  <%= link_to 'Edit', edit_discipline_path(@discipline), :class => 'btn btn-primary' %>
+  <%= link_to 'Back', disciplines_path, :class => 'btn btn-primary' %>
+</div>

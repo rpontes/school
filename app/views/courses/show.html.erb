@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <b><%= t("course.name") %>:</b>
+  <%= @course.name %>
+</div>
+
+<div class="row">
+  <b><%= t("course.disciplines") %>:</b>
+  <ul class="unstyled">
+    <% for discipline in @course.disciplines %>
+      <li>
+        <%= discipline.name %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="row">
+  <%= link_to 'Edit', edit_course_path(@course), :class => 'btn btn-primary' %>
+  <%= link_to 'Back', courses_path, :class => 'btn btn-primary' %>
+</div>

@@ -1,0 +1,21 @@
+<h1><%= t("title.teachers.index") %></h1>
+
+<table>
+  <tr>
+    <th><%= t("teacher.name") %></th>
+    <th><%= t("teacher.discipline") %></th>
+    <th></th>
+  </tr>
+
+<% @teachers.each do |teacher| %>
+  <tr>
+    <td><%= teacher.name %></td>
+    <td><%= teacher.discipline.name %></td>
+    <td><%= link_to t("actions.show"), teacher %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to t("title.teachers.new"), new_teacher_path %>

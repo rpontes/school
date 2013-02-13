@@ -1,0 +1,28 @@
+<h1><%= t("title.disciplines.index") %></h1>
+
+<div class="row">
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th><%= t("discipline.name") %></th>
+      <th><%= t("discipline.teacher") %></th>
+      <th><%= t("actions.title") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @disciplines.each do |discipline| %>
+      <tr>
+        <td><%= discipline.id %></td>
+        <td><%= discipline.name %></td>
+        <td><%= discipline.teacher.try(:name) %></td>
+        <td><%= link_to t("actions.edit"), edit_discipline_path(discipline), :class => 'btn btn-primary' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<div class="row">
+  <%= link_to t("title.disciplines.new"), new_discipline_path, :class => 'btn btn-primary' %>
+</div>

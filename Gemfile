@@ -5,8 +5,10 @@ gem 'mysql2'
 gem 'paginate'
 
 group :assets do
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer'
   gem 'uglifier', '>= 1.0.3'
+  gem "less-rails"
+  gem 'twitter-bootstrap-rails'
 end
 
 group :development, :test do

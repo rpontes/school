@@ -3,6 +3,6 @@ class Student < ActiveRecord::Base
 
   validates_presence_of :registry, :name
 
-  belongs_to :course, :counter_cache => true
+  belongs_to :course
 
 end

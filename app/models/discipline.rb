@@ -1,9 +1,9 @@
 class Discipline < ActiveRecord::Base
-  attr_accessible :name, :course_id
+  attr_accessible :name
 
   validates_presence_of :name
 
-  belongs_to :course
+  has_and_belongs_to_many :course
   has_one :teacher
 
 end

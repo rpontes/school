@@ -1,0 +1,37 @@
+<%= form_for @course, :html => { :class => 'form-inline' } do |f| %>
+
+<fieldset>
+
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="checkbox"><%= t("course.disciplines") %></label>
+    <% for discipline in Discipline.find(:all) %>
+    <label class="checkbox">
+      <%= check_box_tag "course[discipline_ids][]", discipline.id, @course.disciplines.include?(discipline) %>
+      <%= discipline.name %> <%= discipline.teacher.try(:name) %>
+    </label>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+  </div>
+</fieldset>
+
+<% end %>

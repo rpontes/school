@@ -1,0 +1,7 @@
+pt-BR:
+  flash:
+    courses:
+      create:
+        notice: "Turma criada com sucesso!"
+      update:
+        notice: "Turma atualizada com sucesso!"

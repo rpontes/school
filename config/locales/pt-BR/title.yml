@@ -1,11 +1,12 @@
 pt-BR:
   title:
     students:
-      new: "Cadastrar estudante"
+      new: "Cadastrar aluno"
+      index: "Alunos Cadastrados"
 
     courses:
       new: "Adicionar turma"
-      index: "Turmas Cadastrados"
+      index: "Turmas Cadastradas"
 
     disciplines:
       new: "Cadastrar matéria"

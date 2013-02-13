@@ -1,0 +1,5 @@
+pt-BR:
+  student:
+    new: "Novo Aluno"
+    name: "Nome"
+    registry: "Matrícula"
