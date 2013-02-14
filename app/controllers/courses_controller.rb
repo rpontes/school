@@ -42,4 +42,8 @@ class CoursesController < ApplicationController
     end
   end
 
+  def report
+    @courses = Course.find(:all, :order => 'name')
+  end
+
 end

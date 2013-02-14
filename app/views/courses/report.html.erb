@@ -1,0 +1,31 @@
+<% @courses.each do |course| %>
+  <div class="page-header">
+    <h2><%= t("report.course") %>: <%= course.name %></h2>
+  </div>
+
+  <div class="row-fluid">
+    <h3><%= t("report.students.registered") %></h3>
+  </div>
+
+  <% for student in course.students %>
+    <div class="row-fluid">
+      <%= student.name %>
+    </div>
+  <% end %>
+
+  <div class="row-fluid">
+    <h3><%= t("report.disciplines") %></h3>
+  </div>
+
+  <div class="row-fluid">
+    <ul class="unstyled">
+      <% for discipline in course.disciplines %>
+        <li>
+          <%= discipline.name %> - <%= discipline.teacher.try(:name) %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <hr>
+<% end %>
+

@@ -1,0 +1,7 @@
+pt-BR:
+  report:
+    course: "Turma"
+    disciplines: "Matérias"
+
+    students:
+      registered: "Alunos Matriculados"

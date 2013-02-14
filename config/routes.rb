@@ -6,4 +6,6 @@ School::Application.routes.draw do
   resources :disciplines
   resources :teachers
 
+  get "/report", :to => "courses#report"
+
 end
