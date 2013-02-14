@@ -1,6 +1,0 @@
-pt-BR:
-  question:
-    must_be_logged_to_answer_html: |
-      <a href="%{link}">Faça o login</a>
-      para responder.
-    relative_time: "perguntou %{time}"
