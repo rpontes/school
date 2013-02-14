@@ -10,8 +10,10 @@ pt-BR:
 
     disciplines:
       new: "Cadastrar matéria"
+      index: "Matérias Cadastradas"
 
     teachers:
       new: "Cadastrar professor"
+      index: "Professores Cadastrados"
 
     reports: "Relatórios"

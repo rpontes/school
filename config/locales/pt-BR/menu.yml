@@ -2,3 +2,5 @@ pt-BR:
   menu:
     courses: "Turmas"
     students: "Alunos"
+    disciplines: "Matérias"
+    teachers: "Professores"

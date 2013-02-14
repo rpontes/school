@@ -1,21 +1,28 @@
 <h1><%= t("title.teachers.index") %></h1>
 
-<table>
-  <tr>
-    <th><%= t("teacher.name") %></th>
-    <th><%= t("teacher.discipline") %></th>
-    <th></th>
-  </tr>
-
-<% @teachers.each do |teacher| %>
-  <tr>
-    <td><%= teacher.name %></td>
-    <td><%= teacher.discipline.name %></td>
-    <td><%= link_to t("actions.show"), teacher %></td>
-  </tr>
-<% end %>
+<div class="row">
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th><%= t("teacher.name") %></th>
+      <th><%= t("discipline.name") %></th>
+      <th><%= t("actions.title") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teachers.each do |teacher| %>
+      <tr>
+        <td><%= teacher.id %></td>
+        <td><%= teacher.name %></td>
+        <td><%= teacher.discipline.name %></td>
+        <td><%= link_to t("actions.edit"), edit_teacher_path(teacher), :class => 'btn btn-primary' %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
+</div>
 
-<br />
-
-<%= link_to t("title.teachers.new"), new_teacher_path %>
+<div class="row-fluid">
+  <%= link_to t("title.disciplines.new"), new_teacher_path, :class => 'btn btn-primary' %>
+</div>
