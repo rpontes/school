@@ -20,18 +20,26 @@
   </div>
 
   <div class="control-group">
-    <label class="checkbox"><%= t("course.disciplines") %></label>
+    <label class="checkbox"><%= t("form.discipline.select") %></label>
     <% for discipline in Discipline.find(:all) %>
     <label class="checkbox">
       <%= check_box_tag "course[discipline_ids][]", discipline.id, @course.disciplines.include?(discipline) %>
-      <%= discipline.name %> <%= discipline.teacher.try(:name) %>
+      <%= discipline.name %> (<%= t("form.discipline.teacher") %> <%= discipline.teacher.try(:name) %>)
     </label>
     <% end %>
   </div>
-
-  <div class="actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-  </div>
 </fieldset>
+
+<div class="row-fluid">
+  <%= link_to t("form.discipline.register"), new_discipline_path %>
+</div>
+
+<br/>
+<div class="row-fluid">
+  <div class="actions">
+    <%= f.submit t("form.submit"), :class => 'btn' %>
+    <%= link_to t("actions.back"), courses_path, :class => 'btn btn-primary' %>
+  </div>
+</div>
 
 <% end %>

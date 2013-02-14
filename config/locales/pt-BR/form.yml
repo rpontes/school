@@ -1,15 +1,23 @@
 pt-BR:
   form:
+    submit: "Cadastrar"
     error_messages: "Verifique o formulário antes de continuar:"
 
     course:
+      label: "Curso"
       nome: "Nome da Turma"
+
+    discipline:
+      label: "Matéria"
+      select: "Selecione as matérias da turma:"
+      teacher: "Prof.:"
+      register: "Cadastre novas matérias"
+
+    teacher:
+      register: "Cadastre o professor para esse matéria"
 
   helpers:
     submit:
       course:
         create: "Cadastrar nova turma"
-      question:
-        create: "Adicionar pergunta"
-      answer:
-        create: "Enviar resposta"
+

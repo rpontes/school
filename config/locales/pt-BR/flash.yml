@@ -5,3 +5,18 @@ pt-BR:
         notice: "Turma criada com sucesso!"
       update:
         notice: "Turma atualizada com sucesso!"
+    disciplines:
+      create:
+        notice: "Matéria criada com sucesso!"
+      update:
+        notice: "Matéria atualizada com sucesso!"
+    teachers:
+      create:
+        notice: "Professor criado com sucesso!"
+      update:
+        notice: "Professor atualizado com sucesso!"
+    students:
+      create:
+        notice: "Estudante criado com sucesso!"
+      update:
+        notice: "Estudante atualizado com sucesso!"

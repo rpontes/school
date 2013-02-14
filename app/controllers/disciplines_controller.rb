@@ -6,7 +6,6 @@ class DisciplinesController < ApplicationController
 
   def new
     @discipline = Discipline.new
-    @courses = Course.find(:all)
   end
 
   def edit

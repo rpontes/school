@@ -19,7 +19,7 @@
             <ul class="unstyled">
               <% for discipline in course.disciplines %>
                 <li>
-                  <%= discipline.name %>
+                  <%= link_to discipline.name, edit_discipline_path(discipline.id) %>
                 </li>
               <% end %>
             </ul>
